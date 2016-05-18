@@ -1,0 +1,6 @@
+curl -XGET 'http://localhost:9200/.watches/_search' '{
+        "fields" : [],
+        "query" : {"match_all" : { } } }'
+
+
+curl -XGET 'http://localhost:9200/_nodes/settings'
